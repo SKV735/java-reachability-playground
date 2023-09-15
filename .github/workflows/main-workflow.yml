@@ -5,7 +5,8 @@ jobs:
   horusec-security:
     name: horusec-security
     runs-on: ubuntu-latest
-    container: node:10.16-jessie
+    container: 
+      image: node:14.16
     steps:
     - name: Check out code
       uses: actions/checkout@v2
